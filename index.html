@@ -1,112 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Luxury Home Collections – Enquiry Form</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- AOS Animation Library -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquire About Luxury Homes | Tree Clouds</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Bubble Background -->
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-
-  <!-- Enquiry Form -->
-  <section class="enquiry-section">
-    <div class="container">
-      <div class="enquiry-card" data-aos="fade-up">
-        <h2 class="text-center">Luxury Home Collections – Enquiry Form</h2>
-        <p class="text-center">Find Your Dream Home Today</p>
-        <p class="text-center text-muted">Fill in your details and our property expert will get in touch with you shortly.</p>
-
-        <form>
-          <div class="row">
-            <!-- Full Name -->
-            <div class="col-md-6 mb-3">
-              <label class="form-label">Full Name*</label>
-              <input type="text" class="form-control" placeholder="Enter your complete name" required>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-home me-2"></i>LUXURY HOME COLLECTION
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                </ul>
             </div>
+        </div>
+    </nav>
 
-            <!-- Email -->
-            <div class="col-md-6 mb-3">
-              <label class="form-label">Email Address*</label>
-              <input type="email" class="form-control" placeholder="For sending property details & brochures" required>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <h1>Luxury Home Collections – Enquiry Form</h1>
+            <p>Find Your Dream Home Today</p>
+        </div>
+    </section>
+
+    <!-- Enquiry Form Section -->
+    <section class="section-padding position-relative">
+        <i class="fas fa-feather pink-floral floral-1"></i>
+        <i class="fas fa-feather-alt pink-floral floral-2"></i>
+        
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="text-center mb-5">
+                        <h2 class="mb-3">Fill in your details and our property expert will get in touch with you shortly.</h2>
+                        <div class="divider"></div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <form>
+                            <div class="row mb-4">
+                                <div class="col-md-6 mb-3">
+                                    <label for="fullName" class="form-label">Full Name*</label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="Enter your complete name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email Address*</label>
+                                    <input type="email" class="form-control" id="email" placeholder="For sending property details & brochures" required>
+                                </div>
+                            </div>
+                            
+                            <div class="row mb-4">
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">Phone Number*</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Our team will contact you directly" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="location" class="form-label">Preferred Location(s)</label>
+                                    <select class="form-select" id="location" multiple>
+                                        <option value="mumbai">Mumbai</option>
+                                        <option value="pune">Pune</option>
+                                        <option value="kolkata">Kolkata</option>
+                                        <option value="ncr">NCR</option>
+                                        <option value="international">International Projects</option>
+                                    </select>
+                                    <div class="form-text">Select multiple if needed</div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mb-4">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Property Type Interested In</label>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="apartment">
+                                        <label class="form-check-label" for="apartment">Apartment / Flat</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="villa">
+                                        <label class="form-check-label" for="villa">Villa / Bungalow</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="penthouse">
+                                        <label class="form-check-label" for="penthouse">Penthouse</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="newLaunch">
+                                        <label class="form-check-label" for="newLaunch">New Launch Projects</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="investment">
+                                        <label class="form-check-label" for="investment">Investment Opportunities</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Budget Range</label>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="budget" id="below1cr">
+                                        <label class="form-check-label" for="below1cr">Below ₹1 Cr</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="budget" id="1to3cr">
+                                        <label class="form-check-label" for="1to3cr">₹1 Cr – ₹3 Cr</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="budget" id="3to5cr">
+                                        <label class="form-check-label" for="3to5cr">₹3 Cr – ₹5 Cr</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="budget" id="5to10cr">
+                                        <label class="form-check-label" for="5to10cr">₹5 Cr – ₹10 Cr</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="budget" id="above10cr">
+                                        <label class="form-check-label" for="above10cr">Above ₹10 Cr</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="message" class="form-label">Message / Specific Requirements</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Tell us more about your dream property – size, amenities, etc."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary-custom">Submit Enquiry</button>
+                            
+                            <p class="privacy-note">
+                                <i class="fas fa-lock me-1"></i> Your details are 100% safe with us. We will never share your information with third parties.
+                            </p>
+                        </form>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
+    </section>
 
-          <div class="row">
-            <!-- Phone -->
-            <div class="col-md-6 mb-3">
-              <label class="form-label">Phone Number*</label>
-              <input type="tel" class="form-control" placeholder="Our team will contact you directly" required>
+    <!-- Why Choose Us Section -->
+    <section class="section-padding bg-light-custom position-relative">
+        <i class="fas fa-heart pink-floral floral-1"></i>
+        <i class="fas fa-gem pink-floral floral-2"></i>
+        
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Why Choose Tree Clouds?</h2>
+                <div class="divider"></div>
+                <p class="lead">Discover the advantages of choosing our luxury properties</p>
             </div>
-
-            <!-- Preferred Location -->
-            <div class="col-md-6 mb-3">
-              <label class="form-label">Preferred Location(s)</label>
-              <select multiple class="form-select">
-                <option>Mumbai</option>
-                <option>Pune</option>
-                <option>Kolkata</option>
-                <option>NCR</option>
-                <option>International Projects</option>
-              </select>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-award feature-icon"></i>
+                        <h4>Trusted Builder</h4>
+                        <p>With over 150 years of excellence, Tree Clouds is known for delivering high-quality projects across India.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-home feature-icon"></i>
+                        <h4>Premium Properties</h4>
+                        <p>Luxury apartments with world-class amenities, designed for modern living and comfort.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-hand-holding-usd feature-icon"></i>
+                        <h4>Investment Value</h4>
+                        <p>Prime locations with excellent appreciation potential and rental yields for investors.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-leaf feature-icon"></i>
+                        <h4>Sustainable Living</h4>
+                        <p>Eco-friendly designs with green spaces and sustainable features for a healthier lifestyle.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-shield-alt feature-icon"></i>
+                        <h4>Secure Community</h4>
+                        <p>Gated communities with 24/7 security ensuring complete peace of mind for residents.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-map-marker-alt feature-icon"></i>
+                        <h4>Prime Locations</h4>
+                        <p>Strategic locations with excellent connectivity to business districts, schools, and entertainment hubs.</p>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
+    </section>
 
-          <!-- Property Type -->
-          <div class="mb-3">
-            <label class="form-label">Property Type Interested In</label>
-            <select class="form-select">
-              <option>Apartment / Flat</option>
-              <option>Villa / Bungalow</option>
-              <option>Penthouse</option>
-              <option>New Launch Projects</option>
-              <option>Investment Opportunities</option>
-            </select>
-          </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="mb-0">© 2025 Tree Clouds Luxury Real Estate. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-          <!-- Budget -->
-          <div class="mb-3">
-            <label class="form-label">Budget Range</label>
-            <select class="form-select">
-              <option>Below ₹1 Cr</option>
-              <option>₹1 Cr – ₹3 Cr</option>
-              <option>₹3 Cr – ₹5 Cr</option>
-              <option>₹5 Cr – ₹10 Cr</option>
-              <option>Above ₹10 Cr</option>
-            </select>
-          </div>
-
-          <!-- Message -->
-          <div class="mb-3">
-            <label class="form-label">Message / Specific Requirements</label>
-            <textarea class="form-control" rows="3" placeholder="Tell us more about your dream property – size, amenities, etc."></textarea>
-          </div>
-
-          <!-- Submit Button -->
-          <div class="text-center">
-            <button type="submit" class="btn btn-submit">Submit Enquiry</button>
-            <p class="privacy-note">🔒 Your details are 100% safe with us. We will never share your information with third parties.</p>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Bootstrap & AOS JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 </body>
 </html>
